@@ -1,0 +1,103 @@
+@media screen and (max-width: 1024px){
+    
+    
+    .menu {
+        display: none;
+    }
+    
+    
+    main {
+        width:90%;
+        justify-content: center;
+        background-color: WhiteSmoke;
+        border-left: 15px double silver;
+        border-right:15px double silver;
+        border-top:15px double silver;
+        box-shadow: 10px 10px 5px black,-10px 10px 5px black;
+        margin-top: 10px;
+    }
+    
+    h1 {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        margin-left: 0px;
+        text-align: center;
+        font-size: 18px;
+ 
+    }
+    
+    img {
+        width: 100px;
+        height: 134px;
+        padding: 10px;
+    }
+    
+    .about-me p {
+        font-size: 14px;
+    }
+    
+    .info-blok {
+        margin-top: 1em;
+        margin-bottom: 1.0em;
+       
+    }
+    
+    .education-blok,
+    .experience-blok,
+    .programming-blok,
+    .course-blok {
+        flex-direction: column;
+        margin-bottom: 1.0em; 
+   
+    }
+    
+    .education,
+    .experience,
+    .programming,
+    .course {
+        width: 90%;
+        margin-right: 0px;
+        align-self: center;
+        font-size: 14px;
+    }
+    
+    .post-scriptum {
+    padding-top:10px;
+    }
+    
+    footer{
+    
+        width:90%;
+        border-left: 15px double silver;
+        border-right:15px double silver;
+        border-bottom:15px double silver;
+        box-shadow: 10px 5px 5px black,-10px 5px 5px black;
+        margin-bottom: 10px;
+  
+    }
+    
+    span {
+        padding-right: 5px;
+        font-size: 12px;
+        font-family: sans-serif;
+        align-self: center;
+    }
+    
+    span a {
+        font-size: 14px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+
+      i {
+        padding: 10px 10px;
+
+    }
+    .fa-2x {
+        font-size: 1em !important;
+    }
+}

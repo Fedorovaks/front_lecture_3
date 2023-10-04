@@ -1,0 +1,91 @@
+body {
+ 
+    display: flex;
+    width:50%;
+    flex-direction: column;
+    margin: auto;
+    background: url("../image/fon.jpg");
+    opacity: 0.95;
+}
+
+h1 {
+    text-align: center;
+    color:  #6910D5;
+    padding-bottom: 30px;
+}
+
+h2 {
+    margin: 0;
+}
+
+main {
+    white-space:pre-wrap;
+    text-align: center;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+article {
+    max-width: 50%;
+    flex-basis:25%;
+}
+
+.detail {
+    white-space:pre-wrap;
+
+}
+
+.registration {
+    border:1px solid black;
+    padding: 10px;
+    max-width: 50%;
+    flex-basis: 25%;
+
+}
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+   
+
+}
+
+
+label[for="name"]:after,
+label[for="email"]:after,
+label[for="phone"]:after,
+label[for="pass"]:after{
+    content: ' *';
+    color: red;
+  }
+
+input {
+    margin-top: 10px;
+}
+
+.age,
+.gender {
+    white-space:nowrap;
+}
+
+.age p,
+.gender p {
+    margin: 0;
+    font-size: 20px;
+}
+
+footer{
+    color:#6910D5;
+    font-size: 22px;
+}
+@font-face {
+    font-family: "Miama-Nueva";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Miama-Nueva"),
+         url("/fonts/Nueva/Miama-Nueva.woff") format("woff");
+  }
+  
