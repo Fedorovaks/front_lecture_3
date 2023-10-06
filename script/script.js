@@ -1,9 +1,16 @@
 var activForm = document.querySelector(".registration");
-var knopka = document.querySelector("#button");
+var button = document.querySelector("#button");
+var agreement = document.querySelector("#detail1")
 
-knopka.onclick = function() {
+button.onclick = function() {
     
-    activForm.style.display='flex';
+    if(agreement.checked) {
+        activForm.style.display='flex';
+    }
 
-    };
+    else {
+        alert("Вы не дали согласие на обработку персональных данных, продолжить регистрацию невозможно. ")
+    }
+
+};
     
