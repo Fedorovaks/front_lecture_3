@@ -5,7 +5,11 @@ body {
     flex-direction: column;
     margin: auto;
     background: url("../image/fon.jpg");
-    opacity: 0.95;
+    opacity: 0.9;
+}
+
+header {
+    background-color: whitesmoke;
 }
 
 h1 {
@@ -15,43 +19,48 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 20px;
 }
 
 main {
-    white-space:pre-wrap;
-    text-align: center;
-    background-color:white;
+    text-align: left;
+    background-color:whitesmoke;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  
 }
 
 article {
-    max-width: 50%;
-    flex-basis:25%;
+    max-width: 45%;
+    flex-basis:50%;
+    text-align: center;
 }
 
 .detail {
-    white-space:pre-wrap;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    text-align: left;
 
 }
 
 .registration {
+    display: none;
+    margin: 5px;
     border:1px solid black;
     padding: 10px;
     max-width: 50%;
-    flex-basis: 25%;
-
+    flex-basis: 45%;
+    flex-wrap: wrap;
 }
+
+
 label {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
-   
-
+    flex-basis: 100%;
+    font-style: italic;
 }
-
 
 label[for="name"]:after,
 label[for="email"]:after,
@@ -65,27 +74,63 @@ input {
     margin-top: 10px;
 }
 
-.age,
-.gender {
-    white-space:nowrap;
+input[type="submit"] {
+    flex-basis: 100%;
 }
 
-.age p,
-.gender p {
-    margin: 0;
-    font-size: 20px;
+input#name {
+    width: 67%;
+} 
+
+input#birthday {
+    width: 64%;
 }
+
+input#phone {
+    width: 50%;
+}
+
+input#email {
+    width: 74%;
+}
+
+input#pass {
+    width: 78%;
+}
+
+.age {
+    flex-basis: 70%;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+
+}
+.gender {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.age label,
+.gender label {
+    font-style: normal;
+}
+
+figure{
+width: 100%;
+text-align: center;
+}
+
+audio {
+    width: 100%;
+}
+
 
 footer{
     color:#6910D5;
     font-size: 22px;
+    text-align: center;
+    background-color: whitesmoke;
 }
-@font-face {
-    font-family: "Miama-Nueva";
-    font-style: normal;
-    font-weight: 400;
-    /* Браузер сначала попробует найти шрифт локально */
-    src: local("Miama-Nueva"),
-         url("/fonts/Nueva/Miama-Nueva.woff") format("woff");
-  }
-  
+
